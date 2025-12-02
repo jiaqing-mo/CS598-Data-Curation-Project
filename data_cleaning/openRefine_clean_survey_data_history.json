@@ -1,0 +1,344 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "During the past month, how long (in minutes) has it usually taken you to fall asleep each night?",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "30  minutes",
+          "30 minutes"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "30  minutes"
+      },
+      {
+        "from": [
+          "1 Hour",
+          "1 hour"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1 Hour"
+      },
+      {
+        "from": [
+          "15 Minutes",
+          "15 minutes"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "15 Minutes"
+      }
+    ],
+    "description": "Mass edit cells in column During the past month, how long (in minutes) has it usually taken you to fall asleep each night?"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "During the past month, how long (in minutes) has it usually taken you to fall asleep each night?",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1 Hour",
+          "1 hr"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1 Hour"
+      }
+    ],
+    "description": "Mass edit cells in column During the past month, how long (in minutes) has it usually taken you to fall asleep each night?"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "During the past month, how long (in minutes) has it usually taken you to fall asleep each night?",
+    "expression": "grel:replace(value,'mins', '')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column During the past month, how long (in minutes) has it usually taken you to fall asleep each night? using expression grel:replace(value,'mins', '')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "During the past month, how long (in minutes) has it usually taken you to fall asleep each night?",
+    "expression": "grel:replace(value,'min','')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column During the past month, how long (in minutes) has it usually taken you to fall asleep each night? using expression grel:replace(value,'min','')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "During the past month, how long (in minutes) has it usually taken you to fall asleep each night?",
+    "expression": "grel:replace(value,'utes','')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column During the past month, how long (in minutes) has it usually taken you to fall asleep each night? using expression grel:replace(value,'utes','')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "During the past month, how long (in minutes) has it usually taken you to fall asleep each night?",
+    "expression": "grel:replace(value,'Min','')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column During the past month, how long (in minutes) has it usually taken you to fall asleep each night? using expression grel:replace(value,'Min','')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "During the past month, how long (in minutes) has it usually taken you to fall asleep each night?",
+    "expression": "grel:replace(value,'Hour','')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column During the past month, how long (in minutes) has it usually taken you to fall asleep each night? using expression grel:replace(value,'Hour','')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "b. Wake up in the middle of the night or early morning",
+    "description": "Remove column b. Wake up in the middle of the night or early morning"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "a. Cannot get to sleep within 30 minutes",
+    "description": "Remove column a. Cannot get to sleep within 30 minutes"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "c. Have to get up to use the bathroom",
+    "description": "Remove column c. Have to get up to use the bathroom"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "d. Cannot breathe comfortably",
+    "description": "Remove column d. Cannot breathe comfortably"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "e. Cough or snore loudly",
+    "description": "Remove column e. Cough or snore loudly"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "f. Feel too cold",
+    "description": "Remove column f. Feel too cold"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "During the past month, how often have you taken medicine (prescribed or over the counter) to help you sleep?",
+    "description": "Remove column During the past month, how often have you taken medicine (prescribed or over the counter) to help you sleep?"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "During the past month, how often have you had trouble staying awake while driving, eating meals, or engaging in social activity?",
+    "description": "Remove column During the past month, how often have you had trouble staying awake while driving, eating meals, or engaging in social activity?"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Other reason(s), please describe, including how often you have had trouble sleeping because of this reason(s):",
+    "description": "Remove column Other reason(s), please describe, including how often you have had trouble sleeping because of this reason(s):"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "j. Other reason(s)",
+    "description": "Remove column j. Other reason(s)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "i. Have pain",
+    "description": "Remove column i. Have pain"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "h. Have bad dreams",
+    "description": "Remove column h. Have bad dreams"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "g. Feel too hot",
+    "description": "Remove column g. Feel too hot"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "During the past month, how many hours of actual sleep did you get at night? (This may be different than the number of hours you spent in bed.)",
+    "expression": "grel:replace(value,'hours','')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column During the past month, how many hours of actual sleep did you get at night? (This may be different than the number of hours you spent in bed.) using expression grel:replace(value,'hours','')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "During the past month, how many hours of actual sleep did you get at night? (This may be different than the number of hours you spent in bed.)",
+    "expression": "grel:replace(value,'hrs','')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column During the past month, how many hours of actual sleep did you get at night? (This may be different than the number of hours you spent in bed.) using expression grel:replace(value,'hrs','')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "During the past month, how much of a problem has it been for you to keep up enthusiasm to get things done?",
+    "description": "Remove column During the past month, how much of a problem has it been for you to keep up enthusiasm to get things done?"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "During the past month, how would you rate your sleep quality overall?",
+    "expression": "grel:value.replace(\"Very good\",\"4\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column During the past month, how would you rate your sleep quality overall? using expression grel:value.replace(\"Very good\",\"4\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "During the past month, how would you rate your sleep quality overall?",
+    "expression": "grel:value.replace(\"Fairly good\",\"3\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column During the past month, how would you rate your sleep quality overall? using expression grel:value.replace(\"Fairly good\",\"3\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "During the past month, how would you rate your sleep quality overall?",
+    "expression": "grel:value.replace(\"Fairly bad\",\"2\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column During the past month, how would you rate your sleep quality overall? using expression grel:value.replace(\"Fairly bad\",\"2\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "During the past month, how would you rate your sleep quality overall?",
+    "expression": "grel:value.replace(\"Very bad\",\"1\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column During the past month, how would you rate your sleep quality overall? using expression grel:value.replace(\"Very bad\",\"1\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "During the past month, how would you rate your sleep quality overall?",
+    "newColumnName": "sleep quality score",
+    "description": "Rename column During the past month, how would you rate your sleep quality overall? to sleep quality score"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sleep quality score",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column sleep quality score using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "During the past month, how many hours of actual sleep did you get at night? (This may be different than the number of hours you spent in bed.)",
+    "newColumnName": "hour sleep",
+    "description": "Rename column During the past month, how many hours of actual sleep did you get at night? (This may be different than the number of hours you spent in bed.) to hour sleep"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "hour sleep",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column hour sleep using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "During the past month, how long (in minutes) has it usually taken you to fall asleep each night?",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column During the past month, how long (in minutes) has it usually taken you to fall asleep each night? using expression value.toNumber()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "During the past month, how long (in minutes) has it usually taken you to fall asleep each night?",
+    "newColumnName": "time to fall sleep",
+    "description": "Rename column During the past month, how long (in minutes) has it usually taken you to fall asleep each night? to time to fall sleep"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "During the past month, what time have you usually gone to bed at night?",
+    "newColumnName": "bedtime",
+    "description": "Rename column During the past month, what time have you usually gone to bed at night? to bedtime"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "When have you usually gotten up in the morning?",
+    "newColumnName": "wake up time",
+    "description": "Rename column When have you usually gotten up in the morning? to wake up time"
+  }
+]

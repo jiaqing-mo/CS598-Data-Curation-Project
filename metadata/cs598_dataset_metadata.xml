@@ -1,0 +1,65 @@
+<resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- Unique identifier (DOI placeholder, replace with your DOI) -->
+  <identifier identifierType="DOI">10.1234/cs598.dataset</identifier>
+
+  <!-- Dataset creators -->
+  <creators>
+    <creator>
+      <creatorName>Jiaqing Mo</creatorName>
+      <givenName>Jiaqing</givenName>
+      <familyName>Mo</familyName>
+    </creator>
+  </creators>
+
+  <!-- Dataset title -->
+  <titles>
+    <title>CS598 Study Dataset – Education, Grades, Physical Activity, and Sleep</title>
+  </titles>
+
+  <!-- Publisher -->
+  <publisher>UIUC</publisher>
+
+  <!-- Publication year -->
+  <publicationYear>2025</publicationYear>
+
+  <!-- Resource type -->
+  <resourceType resourceTypeGeneral="Dataset">Dataset</resourceType>
+
+  <!-- Subjects / Keywords -->
+  <subjects>
+    <subject>Education</subject>
+    <subject>Grades</subject>
+    <subject>Physical Activity</subject>
+    <subject>Sleep Questionnaire</subject>
+    <subject>CS598 Project</subject>
+  </subjects>
+
+  <!-- Description / Abstract -->
+  <descriptions>
+    <description descriptionType="Abstract">
+      This dataset contains cleaned and integrated data from a CS598 research project. It includes:
+      <ul>
+        <li>Class enrollment data (CSV format)</li>
+        <li>Grades data including overall GPA, CS65, and other metrics</li>
+        <li>Physical activity data collected via smartphones, processed to remove stationary periods</li>
+        <li>Sleep questionnaire responses, cleaned and summarized</li>
+      </ul>
+      The data was preprocessed for integration, quality assessment, and analysis of relationships between education, physical activity, sleep, and academic performance.
+    </description>
+  </descriptions>
+
+  <!-- Related identifiers -->
+  <relatedIdentifiers>
+    <relatedIdentifier relatedIdentifierType="URL" relationType="IsSupplementTo">
+      https://github.com/jiaqing-mo/CS598-Data-Curation-Project
+    </relatedIdentifier>
+  </relatedIdentifiers>
+
+  <!-- Version -->
+  <version>1.0</version>
+
+  <!-- Rights / License -->
+  <rightsList>
+    <rights rightsURI="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</rights>
+  </rightsList>
+</resource>
