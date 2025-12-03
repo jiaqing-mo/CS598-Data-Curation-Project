@@ -28,4 +28,7 @@ python -m curate.classes
 echo "=== Curating deadlines ==="
 python -m curate.deadlines
 
+echo "=== Curating sensing/activity ==="
+python -m curate.activity
+
 echo "=== All curation jobs completed successfully ==="

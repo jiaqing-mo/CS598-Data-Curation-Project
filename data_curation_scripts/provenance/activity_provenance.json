@@ -1,0 +1,27 @@
+{
+  "table": "activity",
+  "source_folder": "/Users/hashamulhaq/Downloads/dataset/dataset//sensing/activity/",
+  "processed_file": "./processed_data/activity.csv",
+  "depends_on": {
+    "grades_table": "./processed_data/grades.csv"
+  },
+  "operations": [
+    "discover all activity CSV files recursively under BASE_PATH/sensing/activity/",
+    "for each file: read CSV",
+    "strip whitespace from column names",
+    "rename 'activity inference' to 'activity_inference' (if present)",
+    "normalize 'timestamp' from Unix seconds to datetime (if present)",
+    "infer uid from filename suffix and add as 'uid' column",
+    "concatenate all activity CSVs into a single event-level table",
+    "standardize 'uid' formatting",
+    "filter rows to keep only uids present in processed grades table"
+  ],
+  "stats": {
+    "file_count": 49,
+    "row_count_before_filter": 22842191,
+    "row_count_after_filter": 14713059,
+    "unique_uids_before_filter": 49,
+    "unique_uids_after_filter": 30,
+    "invalid_timestamps_after_normalization": 0
+  }
+}
