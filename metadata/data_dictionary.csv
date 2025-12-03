@@ -1,22 +1,73 @@
 table_name,column_name,data_type,description,allowed_values_notes
-grades,id,integer,Unique row identifier,Auto-increment
+participants,uid,string,Unique user identifier,u00-u59
+class,uid,string,Unique user identifier,u00-u59
+class,course1,string,First enrolled course,Course code (e.g., COSC 065) or NULL
+class,course2,string,Second enrolled course,Course code or NULL
+class,course3,string,Third enrolled course,Course code or NULL
+class,course4,string,Fourth enrolled course,Course code or NULL
+activity_summary,uid,string,Unique user identifier,u00-u59
+activity_summary,activity_id,integer,Activity type,1=Walking; 2=Running; 3=Unknown (0=Stationary ignored)
+activity_summary,activity_count,integer,Number of activity occurrences,>=0
+grades,id,integer,Unique row identifier,Auto-increment (SERIAL)
 grades,uid,string,Unique user identifier,u00-u59
 grades,gpa_all,float,GPA for all courses,0-4
 grades,gpa_13s,float,GPA for 13 selected courses,0-4; may be NULL if no courses
 grades,cs_65,float,Grade in CS 65 course,0-4; may be NULL if course not taken
-class_enrollment,uid,string,Unique user identifier,u00-u59
-class_enrollment,course1,string,First enrolled course,Course code (e.g., COSC 065)
-class_enrollment,course2,string,Second enrolled course,Course code or NULL
-class_enrollment,course3,string,Third enrolled course,Course code or NULL
-class_enrollment,course4,string,Fourth enrolled course,Course code or NULL
-activity_summary,uid,string,Unique user identifier,u00-u59
-activity_summary,activity_id,integer,Activity type,1=Walking; 2=Running; 3=Unknown (0=Stationary ignored)
-activity_summary,activity_count,integer,Number of activity occurrences,>=0
-sleep_questionnaire,uid,string,Unique user identifier,u00-u59
-sleep_questionnaire,type,string,Survey type,pre/post
-sleep_questionnaire,bedtime,string,Usual bedtime,Free text (e.g., "2:00 AM")
-sleep_questionnaire,time_to_fall_sleep,float,Time to fall asleep (minutes),>=0
-sleep_questionnaire,wake_up_time,string,Usual wake-up time,Free text (e.g., "7:00 AM")
-sleep_questionnaire,hour_sleep,float,Hours of actual sleep,>=0
-sleep_questionnaire,sleep_quality_score,integer,Sleep quality (numeric),1=Very bad, 4=Very good
-participants,uid,string,Unique user identifier,u00-u59
+calendar,id,string,Calendar event identifier,VARCHAR(100)
+calendar,device,string,Device identifier,VARCHAR(100)
+calendar,timestamp,bigint,Unix timestamp,>=0
+calendar,account_label,string,Account label,VARCHAR(10)
+calendar,date,date,Event date,YYYY-MM-DD
+calendar,time,string,Event time,VARCHAR(20)
+calendar,uid,string,Unique user identifier,u00-u59
+call_log,id,string,Call log identifier,VARCHAR(100)
+call_log,device,string,Device identifier,VARCHAR(100)
+call_log,timestamp,timestamp,Log timestamp,TIMESTAMP
+call_log,calls_id,float,Call ID,May be NULL
+call_log,calls_date,timestamp,Call date and time,TIMESTAMP
+call_log,calls_duration,float,Call duration (seconds),>=0; may be NULL
+call_log,calls_name,text,Contact name,Free text; may be NULL
+call_log,calls_number,text,Phone number,Free text; may be NULL
+call_log,calls_numberlabel,text,Number label,Free text; may be NULL
+call_log,calls_numbertype,text,Number type,Free text; may be NULL
+call_log,calls_type,float,Call type,May be NULL
+call_log,uid,string,Unique user identifier,u00-u59
+deadlines,uid,string,Unique user identifier,u00-u59
+deadlines,date,date,Deadline date,YYYY-MM-DD
+deadlines,num_deadlines,integer,Number of deadlines on this date,>=0
+dining,date,timestamp,Dining date and time,TIMESTAMP
+dining,restaurant,string,Restaurant name,VARCHAR(100)
+dining,type,string,Dining type,VARCHAR(20)
+dining,date_time,timestamp,Dining date and time (duplicate),TIMESTAMP
+dining,uid,string,Unique user identifier,u00-u59
+piazza,uid,string,Unique user identifier,u00-u59
+piazza,days_online,integer,Number of days online,>=0
+piazza,views,integer,Number of views,>=0
+piazza,contributions,integer,Number of contributions,>=0
+piazza,questions,integer,Number of questions,>=0
+piazza,notes,integer,Number of notes,>=0
+piazza,answers,integer,Number of answers,>=0
+sms,id,string,SMS message identifier,VARCHAR(100)
+sms,device,string,Device identifier,VARCHAR(100)
+sms,timestamp,timestamp,Message timestamp,TIMESTAMP
+sms,messages_address,text,Message recipient/sender address,Free text; may be NULL
+sms,messages_body,text,Message body text,Free text; may be NULL
+sms,messages_date,float,Message date (Unix timestamp),>=0; may be NULL
+sms,messages_locked,boolean,Message locked status,TRUE/FALSE; may be NULL
+sms,messages_person,text,Contact person,Free text; may be NULL
+sms,messages_protocol,float,Message protocol,May be NULL
+sms,messages_read,boolean,Message read status,TRUE/FALSE; may be NULL
+sms,messages_reply_path_present,boolean,Reply path present,TRUE/FALSE; may be NULL
+sms,messages_service_center,text,Service center,Free text; may be NULL
+sms,messages_status,float,Message status,May be NULL
+sms,messages_subject,text,Message subject,Free text; may be NULL
+sms,messages_thread_id,float,Thread ID,May be NULL
+sms,messages_type,float,Message type,May be NULL
+sms,uid,string,Unique user identifier,u00-u59
+survey,uid,string,Unique user identifier,u00-u59
+survey,type,string,Survey type,pre/post
+survey,bedtime,string,Usual bedtime,Free text (e.g., "2:00 AM")
+survey,time_to_fall_sleep,float,Time to fall asleep (minutes),>=0
+survey,wake_up_time,string,Usual wake-up time,Free text (e.g., "7:00 AM")
+survey,hour_sleep,float,Hours of actual sleep,>=0
+survey,sleep_quality_score,integer,Sleep quality (numeric),1=Very bad, 4=Very good
