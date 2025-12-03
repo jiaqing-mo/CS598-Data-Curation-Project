@@ -37,14 +37,7 @@
   <!-- Description / Abstract -->
   <descriptions>
     <description descriptionType="Abstract">
-      This dataset contains cleaned and integrated data from a CS598 research project. It includes:
-      <ul>
-        <li>Class enrollment data (CSV format)</li>
-        <li>Grades data including overall GPA, CS65, and other metrics</li>
-        <li>Physical activity data collected via smartphones, processed to remove stationary periods</li>
-        <li>Sleep questionnaire responses, cleaned and summarized</li>
-      </ul>
-      The data was preprocessed for integration, quality assessment, and analysis of relationships between education, physical activity, sleep, and academic performance.
+      This dataset contains cleaned and integrated data from a CS598 research project. The data was preprocessed for integration, quality assessment, and analysis of relationships between education, physical activity, sleep, and academic performance.
     </description>
   </descriptions>
 
