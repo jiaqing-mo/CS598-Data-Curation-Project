@@ -8,13 +8,20 @@ It's better to run the scirpts on a linux machine.
 
 ## How to run 
 
-All files
+1. Download the data (see `source_data.txt`)
+2. Set the paths in configs/config.py
+3. Run the script:
+
+- Single script to process all the files
 
 `bash curate/curate_all.sh`
 
-Individual files:
+- Process individual files:
 
 `python -m curate.<<file name>>`
+
+- Output files would be generated in `processed_data`.
+- Provenance files would be in `provenance`.
 
 ## What it does
 
@@ -83,7 +90,7 @@ sms/
 - Filtered to uids present in the processed grades table.
 
 
-call_log_provenance.json (call_log/)
+call_log/
 - Discovered all call log CSV files recursively under BASE_PATH/call_log/.
 - Read each CSV file.
 - Normalized timestamp from Unix seconds to datetime (if present).

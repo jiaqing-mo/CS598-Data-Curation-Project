@@ -9,7 +9,7 @@ This is the code base of the CS 598 Data Curation Course Project
 
 **Repo structure:**
 
-This repo contains the codebase to process and clean the base dataset to generate a more refined version with complete provenance and data modeling.
+This repo contains the codebase to process and clean the base dataset to generate a more refined version, with complete provenance and data modeling.
 - `setup_inspection` contains the schema details.
 - `metadata` contains supplementary information about the dataset.
 - `data_cleaning` contains the full code base with provenance and output files.
