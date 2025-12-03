@@ -1,0 +1,85 @@
+uid,type,bedtime,time to fall sleep,wake up time,hour sleep,sleep quality score
+u00,pre,2:00 AM,10.0,7:00 AM,6.0,2
+u01,pre,1AM,20,11AM,9.5,4
+u02,pre,around 1 am,7,about 9am,7.5,3
+u03,pre,1am,10,8:30am,7,3
+u04,pre,11:30,10,6:00,6,3
+u05,pre,11:30pm,15,8:00am,8,4
+u07,pre,Between 12a and 2a,20.0,between 9a and 11a,8,3
+u08,pre,1:00 AM,15.0,9:00 AM,7,3
+u09,pre,12:00,10,8:30,7.5,4
+u10,pre,12-1 AM,30,8:10 AM,7.5,3
+u12,pre,10pm,10,3am,7.5,4
+u13,pre,2:00 AM,8,8:45am,7,3
+u14,pre,2:00am,10.0,10am,9.0,3
+u15,pre,1,5,8:15,7,3
+u16,pre,11 or 12pm,5.0,7:30am,6.5,2
+u17,pre,"During the beginning of the month around 4am. But now, after spring break, I try to be in bed around 12, latest 1:30am.",60,"It varies. I know that I regularly need at least 6-7 hrs of sleep, so ideally 7-8am, but because of my late sleep time, usually around 8:30 or 9am.",,2
+u18,pre,12AM,10.0,8am,7.0,3
+u19,pre,Midnight,20,8:30,7,3
+u20,pre,11pm-4pm,5,7am-10am,6.5,3
+u22,pre,1 or 2 am,17,9am to 11am,8.0,3
+u23,pre,13:00,30.0,8:00,6.0,3
+u24,pre,2:00 AM,20,9:00 AM,7,3
+u27,pre,1-2AM,60,7:30,5.5,2
+u30,pre,around midnight,30,8am,7,3
+u31,pre,Never,30.0,Just hour before first class,4,1
+u32,pre,Midnight,45,8:30am,7,2
+u33,pre,1:30 AM,30.0,9:45 AM,7,2
+u34,pre,2AM,1.0,10AM,8.0,4
+u35,pre,around 1:00 AM,8,8:30~9:00 AM,6.5,3
+u36,pre,12:30AM,10,8AM,7.5,3
+u39,pre,2:00 AM,30.0,9:00 AM,7.5,3
+u42,pre,3 or 4 am,10.0,9 or 10 am,5.0,2
+u43,pre,11:30,12,8:30-9,7.5,3
+u44,pre,12:00 m,20,8:00am,7,3
+u45,pre,1:00 AM,15,9:30 AM,8.0,3
+u46,pre,1:30,20,9:00,7,3
+u47,pre,12AM,60,9AM,8,4
+u49,pre,2-4am,16,7-8am,4.5,3
+u50,pre,2am,10,9am,7,3
+u51,pre,2am,15,9:30am,6,2
+u52,pre,3:00 AM,60,1:00 PM,9,4
+u53,pre,2:00 AM,30.0,9:00am,7,2
+u56,pre,1am,15,10:30am,8,3
+u57,pre,Midnight or 1 AM,14.0,9 am or 10 am,9,4
+u58,pre,0:30,10,8:00,7.5,3
+u59,pre,2:00 AM,20.0,8:00 AM,5.0,2
+u00,post,Midnight,15.0,7:00 AM,6,3
+u01,post,3AM,20,11AM,7,3
+u02,post,1am,15,9am,8,3
+u03,post,2am,15,8am,8,3
+u04,post,11:30pm,10,7am,7,3
+u05,post,1:00am,10,8:00am,6.5,3
+u07,post,5am,10,2pm,8,2
+u09,post,Midnight,20,8:30am,8,3
+u10,post,12-1AM,10,8AM,8,3
+u14,post,2:30am,5,11am,6,2
+u15,post,12,5,830,8,3
+u16,post,12am,10,8am,7,3
+u17,post,5am; most nights I've not gone to bed at all since the start of May,60,"Usually I don't get up, I'm awake from the night before. But often I go to sleep at 6 and wake up at 8",3,1
+u18,post,2am,5,8am,5,4
+u19,post,12:00,10,8:00,6.5,4
+u20,post,3am in the morning,10,9:30am,7,3
+u23,post,1:30 AM,20.0,8:00,5,2
+u24,post,3:00 AM,30.0,1:00 PM,6.5,3
+u27,post,3-4am,25,7:30am,3.5,1
+u30,post,12am (midnight),30,8:30am,7,3
+u31,post,usually dawn,10,9:00 AM,6.5,3
+u32,post,12:00am,30,9:00am,7.0,3
+u33,post,2,20,10,7,2
+u34,post,2AM,5.0,10AM,8.0,4
+u35,post,2:00am,30,"9""00 am",6,3
+u36,post,12:30 AM,10.0,8:30 AM,7.5,3
+u42,post,4:00 AM,10.0,11:00 AM,6.0,3
+u43,post,midnight,12,8:30,8,3
+u44,post,12:30,20.0,8:00,8,3
+u45,post,1am,20,9:00 AM,7,3
+u46,post,,,,,
+u47,post,2am,15,10am,7,4
+u49,post,2-5 am,8,8:40 AM,6,2
+u51,post,2am,10,9am,6.5,3
+u52,post,2:00 AM,30,10:00 AM,8,4
+u53,post,3am,60,9am,6,2
+u56,post,1am,10,10am,8.5,3
+u59,post,2:00 AM,15.0,7:00 AM,4.5,3
