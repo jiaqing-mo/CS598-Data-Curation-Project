@@ -18,6 +18,8 @@ This repo contains the codebase to process and clean the base dataset to generat
 
 The base dataset can be obtained from the university of dartmouth's website: https://studentlife.cs.dartmouth.edu/dataset.html
 
+Please obtain it directly from their website.
+
 **References:**
 ```
 @inproceedings{10.1145/2632048.2632054,

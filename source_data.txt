@@ -1,0 +1,3 @@
+The dataset used in this project is taken from https://studentlife.cs.dartmouth.edu/dataset.html
+
+Please download the dataset directly from the website.
