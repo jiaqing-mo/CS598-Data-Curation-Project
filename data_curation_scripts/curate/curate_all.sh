@@ -19,4 +19,13 @@ python -m curate.call_log
 echo "=== Curating app_usage ==="
 python -m curate.app_usage
 
+echo "=== Curating education_piazza ==="
+python -m curate.piazza
+
+echo "=== Curating class enrollments ==="
+python -m curate.classes
+
+echo "=== Curating deadlines ==="
+python -m curate.deadlines
+
 echo "=== All curation jobs completed successfully ==="

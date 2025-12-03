@@ -1,0 +1,25 @@
+{
+  "table": "piazza",
+  "source_file": "/Users/hashamulhaq/Downloads/dataset/dataset//education/piazza.csv",
+  "processed_file": "./processed_data/piazza.csv",
+  "depends_on": {
+    "grades_table": "./processed_data/grades.csv"
+  },
+  "operations": [
+    "read CSV",
+    "strip whitespace from column names",
+    "standardize 'uid' formatting (string, stripped)",
+    "coerce piazza metric columns to numeric (errors='coerce')",
+    "drop rows with any null values after type coercion",
+    "inner-join with processed grades table on 'uid' to keep only valid students"
+  ],
+  "stats": {
+    "row_count_before": 49,
+    "null_rows_before": 0,
+    "row_count_after_dropna": 49,
+    "null_rows_after_dropna": 0,
+    "unique_uids_before_merge": 49,
+    "row_count_after_merge": 30,
+    "unique_uids_after_merge": 30
+  }
+}

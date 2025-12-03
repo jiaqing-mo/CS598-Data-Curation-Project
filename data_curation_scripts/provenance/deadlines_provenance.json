@@ -1,0 +1,28 @@
+{
+  "table": "deadlines",
+  "source_file": "/Users/hashamulhaq/Downloads/dataset/dataset//education/deadlines.csv",
+  "processed_file": "./processed_data/deadlines.csv",
+  "depends_on": {
+    "grades_table": "./processed_data/grades.csv"
+  },
+  "operations": [
+    "read wide-format deadlines CSV",
+    "strip whitespace from column names and 'uid'",
+    "identify all date columns (all columns except 'uid')",
+    "melt wide table into long format with columns [uid, date_str, num_deadlines]",
+    "coerce num_deadlines to numeric (errors='coerce')",
+    "parse date_str into datetime 'date' (format '%Y-%m-%d')",
+    "drop rows with invalid date or missing num_deadlines",
+    "keep only rows with num_deadlines > 0 (days that actually have deadlines)",
+    "standardize 'uid' formatting and num_deadlines as int",
+    "filter rows to keep only uids present in processed grades table"
+  ],
+  "stats": {
+    "row_count_wide": 44,
+    "num_date_columns": 146,
+    "row_count_long_before_clean": 6424,
+    "row_count_after_filter": 490,
+    "unique_uids_before_filter": 44,
+    "unique_uids_after_filter": 29
+  }
+}
