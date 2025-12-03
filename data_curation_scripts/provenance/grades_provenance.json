@@ -1,0 +1,21 @@
+{
+  "table": "grades",
+  "source_file": "/Users/hashamulhaq/Downloads/dataset/dataset//education/grades.csv",
+  "processed_file": "./processed_data/grades.csv",
+  "operations": [
+    "read CSV",
+    "strip whitespace from column names",
+    "strip whitespace from 'uid'",
+    "drop rows with any null values",
+    "validate GPA column has no values < 0 (if present)"
+  ],
+  "stats": {
+    "row_count_before": 30,
+    "row_count_after": 30,
+    "null_rows_before": 0,
+    "uid_nunique_after": 30,
+    "min_gpa_after": null,
+    "max_gpa_after": null,
+    "invalid_gpa_rows_after": 0
+  }
+}
